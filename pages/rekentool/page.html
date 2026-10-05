@@ -1,0 +1,621 @@
+<!DOCTYPE html><html lang="nl"><head>
+        <!-- Google Tag Manager -->
+        
+        <!-- End Google Tag Manager -->
+
+    <!-- Cookiebot renew: attach early so a click before app.js loads still reopens the consent dialog -->
+    
+
+
+	<title>Bereken je kinderopvangkosten: eenvoudig en snel</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+    
+  <meta name="description" content="Benieuwd wat kinderopvang jou straks kost? Bereken eenvoudig je maandelijkse kosten met de rekentool van Partou, inclusief kinderopvangtoeslag voor je eerste kind.">
+  <meta name="keywords" content="partou,kinderopvang,kosten,berekenen,rekentool,bso,kinderdagverblijf,rekentool kinderopvang,kinderopvang kosten berekenen,,Partou rekentool,netto kosten opvang">
+
+
+  <meta property="og:title" content="Bereken je kinderopvangkosten: eenvoudig en snel">
+  <meta property="og:description" content="Benieuwd wat kinderopvang jou straks kost? Bereken eenvoudig je maandelijkse kosten met de rekentool van Partou, inclusief kinderopvangtoeslag voor je eerste kind.">
+  <meta property="og:image" content="https://partou.nl:443/media/0hdf1hzh/header-rekentool.jpg?width=1920&amp;height=1080&amp;rnd=134108907322800000">
+
+
+    <link rel="shortcut icon" href="/dist/partou.ico">
+
+    
+
+        <link rel="canonical" href="https://partou.nl/rekentool/">
+    <link rel="preload" as="style" href="/dist/v20260824060243/css/app.css">
+    <link rel="preload" as="font" type="font/woff2" crossorigin="" href="/dist/fonts/CeraPro-Regular.woff2">
+    <link rel="preload" as="font" type="font/woff2" crossorigin="" href="/dist/fonts/CeraPro-Medium.woff2">
+    <link rel="preload" as="font" type="font/woff2" crossorigin="" href="/dist/fonts/CeraPro-Bold.woff2">
+    <link rel="preload" as="font" type="font/woff2" crossorigin="" href="/dist/fonts/PlayfairDisplay-Regular.woff2">
+    <link rel="preload" as="font" type="font/woff2" crossorigin="" href="/dist/fonts/PlayfairDisplay-Medium.woff2">
+    <link rel="preload" as="font" type="font/woff2" crossorigin="" href="/dist/fonts/PlayfairDisplay-Bold.woff2">
+
+    <link rel="stylesheet" type="text/css" href="/dist/v20260824060243/css/app.css">
+<link rel="stylesheet" type="text/css" href="https://partou.nl/dist/v20260824060243/js/../css/main.css"><style type="text/css" id="CookieConsentStateDisplayStyles">.cookieconsent-optin,.cookieconsent-optin-preferences,.cookieconsent-optin-statistics,.cookieconsent-optin-marketing{display:block;display:initial;}.cookieconsent-optout-preferences,.cookieconsent-optout-statistics,.cookieconsent-optout-marketing,.cookieconsent-optout{display:none;}</style><style data-vue-meta="vuetify" type="text/css" id="vuetify-theme-stylesheet" nonce="">.v-application a { color: #331214; }
+.v-application .primary {
+  background-color: #331214 !important;
+  border-color: #331214 !important;
+}
+.v-application .primary--text {
+  color: #331214 !important;
+  caret-color: #331214 !important;
+}
+.v-application .primary.lighten-5 {
+  background-color: #b38787 !important;
+  border-color: #b38787 !important;
+}
+.v-application .primary--text.text--lighten-5 {
+  color: #b38787 !important;
+  caret-color: #b38787 !important;
+}
+.v-application .primary.lighten-4 {
+  background-color: #986d6e !important;
+  border-color: #986d6e !important;
+}
+.v-application .primary--text.text--lighten-4 {
+  color: #986d6e !important;
+  caret-color: #986d6e !important;
+}
+.v-application .primary.lighten-3 {
+  background-color: #7d5555 !important;
+  border-color: #7d5555 !important;
+}
+.v-application .primary--text.text--lighten-3 {
+  color: #7d5555 !important;
+  caret-color: #7d5555 !important;
+}
+.v-application .primary.lighten-2 {
+  background-color: #643d3e !important;
+  border-color: #643d3e !important;
+}
+.v-application .primary--text.text--lighten-2 {
+  color: #643d3e !important;
+  caret-color: #643d3e !important;
+}
+.v-application .primary.lighten-1 {
+  background-color: #4b2728 !important;
+  border-color: #4b2728 !important;
+}
+.v-application .primary--text.text--lighten-1 {
+  color: #4b2728 !important;
+  caret-color: #4b2728 !important;
+}
+.v-application .primary.darken-1 {
+  background-color: #220000 !important;
+  border-color: #220000 !important;
+}
+.v-application .primary--text.text--darken-1 {
+  color: #220000 !important;
+  caret-color: #220000 !important;
+}
+.v-application .primary.darken-2 {
+  background-color: #100000 !important;
+  border-color: #100000 !important;
+}
+.v-application .primary--text.text--darken-2 {
+  color: #100000 !important;
+  caret-color: #100000 !important;
+}
+.v-application .primary.darken-3 {
+  background-color: #000000 !important;
+  border-color: #000000 !important;
+}
+.v-application .primary--text.text--darken-3 {
+  color: #000000 !important;
+  caret-color: #000000 !important;
+}
+.v-application .primary.darken-4 {
+  background-color: #000000 !important;
+  border-color: #000000 !important;
+}
+.v-application .primary--text.text--darken-4 {
+  color: #000000 !important;
+  caret-color: #000000 !important;
+}
+.v-application .secondary {
+  background-color: #ece6df !important;
+  border-color: #ece6df !important;
+}
+.v-application .secondary--text {
+  color: #ece6df !important;
+  caret-color: #ece6df !important;
+}
+.v-application .secondary.lighten-5 {
+  background-color: #ffffff !important;
+  border-color: #ffffff !important;
+}
+.v-application .secondary--text.text--lighten-5 {
+  color: #ffffff !important;
+  caret-color: #ffffff !important;
+}
+.v-application .secondary.lighten-4 {
+  background-color: #ffffff !important;
+  border-color: #ffffff !important;
+}
+.v-application .secondary--text.text--lighten-4 {
+  color: #ffffff !important;
+  caret-color: #ffffff !important;
+}
+.v-application .secondary.lighten-3 {
+  background-color: #ffffff !important;
+  border-color: #ffffff !important;
+}
+.v-application .secondary--text.text--lighten-3 {
+  color: #ffffff !important;
+  caret-color: #ffffff !important;
+}
+.v-application .secondary.lighten-2 {
+  background-color: #ffffff !important;
+  border-color: #ffffff !important;
+}
+.v-application .secondary--text.text--lighten-2 {
+  color: #ffffff !important;
+  caret-color: #ffffff !important;
+}
+.v-application .secondary.lighten-1 {
+  background-color: #fffffc !important;
+  border-color: #fffffc !important;
+}
+.v-application .secondary--text.text--lighten-1 {
+  color: #fffffc !important;
+  caret-color: #fffffc !important;
+}
+.v-application .secondary.darken-1 {
+  background-color: #d0cac3 !important;
+  border-color: #d0cac3 !important;
+}
+.v-application .secondary--text.text--darken-1 {
+  color: #d0cac3 !important;
+  caret-color: #d0cac3 !important;
+}
+.v-application .secondary.darken-2 {
+  background-color: #b4afa8 !important;
+  border-color: #b4afa8 !important;
+}
+.v-application .secondary--text.text--darken-2 {
+  color: #b4afa8 !important;
+  caret-color: #b4afa8 !important;
+}
+.v-application .secondary.darken-3 {
+  background-color: #99948d !important;
+  border-color: #99948d !important;
+}
+.v-application .secondary--text.text--darken-3 {
+  color: #99948d !important;
+  caret-color: #99948d !important;
+}
+.v-application .secondary.darken-4 {
+  background-color: #7f7a74 !important;
+  border-color: #7f7a74 !important;
+}
+.v-application .secondary--text.text--darken-4 {
+  color: #7f7a74 !important;
+  caret-color: #7f7a74 !important;
+}
+.v-application .accent {
+  background-color: #cb5a5c !important;
+  border-color: #cb5a5c !important;
+}
+.v-application .accent--text {
+  color: #cb5a5c !important;
+  caret-color: #cb5a5c !important;
+}
+.v-application .accent.lighten-5 {
+  background-color: #ffe4e0 !important;
+  border-color: #ffe4e0 !important;
+}
+.v-application .accent--text.text--lighten-5 {
+  color: #ffe4e0 !important;
+  caret-color: #ffe4e0 !important;
+}
+.v-application .accent.lighten-4 {
+  background-color: #ffc7c4 !important;
+  border-color: #ffc7c4 !important;
+}
+.v-application .accent--text.text--lighten-4 {
+  color: #ffc7c4 !important;
+  caret-color: #ffc7c4 !important;
+}
+.v-application .accent.lighten-3 {
+  background-color: #ffaba9 !important;
+  border-color: #ffaba9 !important;
+}
+.v-application .accent--text.text--lighten-3 {
+  color: #ffaba9 !important;
+  caret-color: #ffaba9 !important;
+}
+.v-application .accent.lighten-2 {
+  background-color: #ff8f8e !important;
+  border-color: #ff8f8e !important;
+}
+.v-application .accent--text.text--lighten-2 {
+  color: #ff8f8e !important;
+  caret-color: #ff8f8e !important;
+}
+.v-application .accent.lighten-1 {
+  background-color: #e97475 !important;
+  border-color: #e97475 !important;
+}
+.v-application .accent--text.text--lighten-1 {
+  color: #e97475 !important;
+  caret-color: #e97475 !important;
+}
+.v-application .accent.darken-1 {
+  background-color: #ad4044 !important;
+  border-color: #ad4044 !important;
+}
+.v-application .accent--text.text--darken-1 {
+  color: #ad4044 !important;
+  caret-color: #ad4044 !important;
+}
+.v-application .accent.darken-2 {
+  background-color: #90242e !important;
+  border-color: #90242e !important;
+}
+.v-application .accent--text.text--darken-2 {
+  color: #90242e !important;
+  caret-color: #90242e !important;
+}
+.v-application .accent.darken-3 {
+  background-color: #73001a !important;
+  border-color: #73001a !important;
+}
+.v-application .accent--text.text--darken-3 {
+  color: #73001a !important;
+  caret-color: #73001a !important;
+}
+.v-application .accent.darken-4 {
+  background-color: #570000 !important;
+  border-color: #570000 !important;
+}
+.v-application .accent--text.text--darken-4 {
+  color: #570000 !important;
+  caret-color: #570000 !important;
+}
+.v-application .error {
+  background-color: #cb3d43 !important;
+  border-color: #cb3d43 !important;
+}
+.v-application .error--text {
+  color: #cb3d43 !important;
+  caret-color: #cb3d43 !important;
+}
+.v-application .error.lighten-5 {
+  background-color: #ffcac2 !important;
+  border-color: #ffcac2 !important;
+}
+.v-application .error--text.text--lighten-5 {
+  color: #ffcac2 !important;
+  caret-color: #ffcac2 !important;
+}
+.v-application .error.lighten-4 {
+  background-color: #ffada7 !important;
+  border-color: #ffada7 !important;
+}
+.v-application .error--text.text--lighten-4 {
+  color: #ffada7 !important;
+  caret-color: #ffada7 !important;
+}
+.v-application .error.lighten-3 {
+  background-color: #ff918d !important;
+  border-color: #ff918d !important;
+}
+.v-application .error--text.text--lighten-3 {
+  color: #ff918d !important;
+  caret-color: #ff918d !important;
+}
+.v-application .error.lighten-2 {
+  background-color: #ff7573 !important;
+  border-color: #ff7573 !important;
+}
+.v-application .error--text.text--lighten-2 {
+  color: #ff7573 !important;
+  caret-color: #ff7573 !important;
+}
+.v-application .error.lighten-1 {
+  background-color: #ea595b !important;
+  border-color: #ea595b !important;
+}
+.v-application .error--text.text--lighten-1 {
+  color: #ea595b !important;
+  caret-color: #ea595b !important;
+}
+.v-application .error.darken-1 {
+  background-color: #ac1d2d !important;
+  border-color: #ac1d2d !important;
+}
+.v-application .error--text.text--darken-1 {
+  color: #ac1d2d !important;
+  caret-color: #ac1d2d !important;
+}
+.v-application .error.darken-2 {
+  background-color: #8e0018 !important;
+  border-color: #8e0018 !important;
+}
+.v-application .error--text.text--darken-2 {
+  color: #8e0018 !important;
+  caret-color: #8e0018 !important;
+}
+.v-application .error.darken-3 {
+  background-color: #700000 !important;
+  border-color: #700000 !important;
+}
+.v-application .error--text.text--darken-3 {
+  color: #700000 !important;
+  caret-color: #700000 !important;
+}
+.v-application .error.darken-4 {
+  background-color: #540000 !important;
+  border-color: #540000 !important;
+}
+.v-application .error--text.text--darken-4 {
+  color: #540000 !important;
+  caret-color: #540000 !important;
+}
+.v-application .info {
+  background-color: #2196f3 !important;
+  border-color: #2196f3 !important;
+}
+.v-application .info--text {
+  color: #2196f3 !important;
+  caret-color: #2196f3 !important;
+}
+.v-application .info.lighten-5 {
+  background-color: #d4ffff !important;
+  border-color: #d4ffff !important;
+}
+.v-application .info--text.text--lighten-5 {
+  color: #d4ffff !important;
+  caret-color: #d4ffff !important;
+}
+.v-application .info.lighten-4 {
+  background-color: #b5ffff !important;
+  border-color: #b5ffff !important;
+}
+.v-application .info--text.text--lighten-4 {
+  color: #b5ffff !important;
+  caret-color: #b5ffff !important;
+}
+.v-application .info.lighten-3 {
+  background-color: #95e8ff !important;
+  border-color: #95e8ff !important;
+}
+.v-application .info--text.text--lighten-3 {
+  color: #95e8ff !important;
+  caret-color: #95e8ff !important;
+}
+.v-application .info.lighten-2 {
+  background-color: #75ccff !important;
+  border-color: #75ccff !important;
+}
+.v-application .info--text.text--lighten-2 {
+  color: #75ccff !important;
+  caret-color: #75ccff !important;
+}
+.v-application .info.lighten-1 {
+  background-color: #51b0ff !important;
+  border-color: #51b0ff !important;
+}
+.v-application .info--text.text--lighten-1 {
+  color: #51b0ff !important;
+  caret-color: #51b0ff !important;
+}
+.v-application .info.darken-1 {
+  background-color: #007cd6 !important;
+  border-color: #007cd6 !important;
+}
+.v-application .info--text.text--darken-1 {
+  color: #007cd6 !important;
+  caret-color: #007cd6 !important;
+}
+.v-application .info.darken-2 {
+  background-color: #0064ba !important;
+  border-color: #0064ba !important;
+}
+.v-application .info--text.text--darken-2 {
+  color: #0064ba !important;
+  caret-color: #0064ba !important;
+}
+.v-application .info.darken-3 {
+  background-color: #004d9f !important;
+  border-color: #004d9f !important;
+}
+.v-application .info--text.text--darken-3 {
+  color: #004d9f !important;
+  caret-color: #004d9f !important;
+}
+.v-application .info.darken-4 {
+  background-color: #003784 !important;
+  border-color: #003784 !important;
+}
+.v-application .info--text.text--darken-4 {
+  color: #003784 !important;
+  caret-color: #003784 !important;
+}
+.v-application .success {
+  background-color: #4caf50 !important;
+  border-color: #4caf50 !important;
+}
+.v-application .success--text {
+  color: #4caf50 !important;
+  caret-color: #4caf50 !important;
+}
+.v-application .success.lighten-5 {
+  background-color: #dcffd6 !important;
+  border-color: #dcffd6 !important;
+}
+.v-application .success--text.text--lighten-5 {
+  color: #dcffd6 !important;
+  caret-color: #dcffd6 !important;
+}
+.v-application .success.lighten-4 {
+  background-color: #beffba !important;
+  border-color: #beffba !important;
+}
+.v-application .success--text.text--lighten-4 {
+  color: #beffba !important;
+  caret-color: #beffba !important;
+}
+.v-application .success.lighten-3 {
+  background-color: #a2ff9e !important;
+  border-color: #a2ff9e !important;
+}
+.v-application .success--text.text--lighten-3 {
+  color: #a2ff9e !important;
+  caret-color: #a2ff9e !important;
+}
+.v-application .success.lighten-2 {
+  background-color: #85e783 !important;
+  border-color: #85e783 !important;
+}
+.v-application .success--text.text--lighten-2 {
+  color: #85e783 !important;
+  caret-color: #85e783 !important;
+}
+.v-application .success.lighten-1 {
+  background-color: #69cb69 !important;
+  border-color: #69cb69 !important;
+}
+.v-application .success--text.text--lighten-1 {
+  color: #69cb69 !important;
+  caret-color: #69cb69 !important;
+}
+.v-application .success.darken-1 {
+  background-color: #2d9437 !important;
+  border-color: #2d9437 !important;
+}
+.v-application .success--text.text--darken-1 {
+  color: #2d9437 !important;
+  caret-color: #2d9437 !important;
+}
+.v-application .success.darken-2 {
+  background-color: #00791e !important;
+  border-color: #00791e !important;
+}
+.v-application .success--text.text--darken-2 {
+  color: #00791e !important;
+  caret-color: #00791e !important;
+}
+.v-application .success.darken-3 {
+  background-color: #006000 !important;
+  border-color: #006000 !important;
+}
+.v-application .success--text.text--darken-3 {
+  color: #006000 !important;
+  caret-color: #006000 !important;
+}
+.v-application .success.darken-4 {
+  background-color: #004700 !important;
+  border-color: #004700 !important;
+}
+.v-application .success--text.text--darken-4 {
+  color: #004700 !important;
+  caret-color: #004700 !important;
+}
+.v-application .warning {
+  background-color: #fb8c00 !important;
+  border-color: #fb8c00 !important;
+}
+.v-application .warning--text {
+  color: #fb8c00 !important;
+  caret-color: #fb8c00 !important;
+}
+.v-application .warning.lighten-5 {
+  background-color: #ffff9e !important;
+  border-color: #ffff9e !important;
+}
+.v-application .warning--text.text--lighten-5 {
+  color: #ffff9e !important;
+  caret-color: #ffff9e !important;
+}
+.v-application .warning.lighten-4 {
+  background-color: #fffb82 !important;
+  border-color: #fffb82 !important;
+}
+.v-application .warning--text.text--lighten-4 {
+  color: #fffb82 !important;
+  caret-color: #fffb82 !important;
+}
+.v-application .warning.lighten-3 {
+  background-color: #ffdf67 !important;
+  border-color: #ffdf67 !important;
+}
+.v-application .warning--text.text--lighten-3 {
+  color: #ffdf67 !important;
+  caret-color: #ffdf67 !important;
+}
+.v-application .warning.lighten-2 {
+  background-color: #ffc24b !important;
+  border-color: #ffc24b !important;
+}
+.v-application .warning--text.text--lighten-2 {
+  color: #ffc24b !important;
+  caret-color: #ffc24b !important;
+}
+.v-application .warning.lighten-1 {
+  background-color: #ffa72d !important;
+  border-color: #ffa72d !important;
+}
+.v-application .warning--text.text--lighten-1 {
+  color: #ffa72d !important;
+  caret-color: #ffa72d !important;
+}
+.v-application .warning.darken-1 {
+  background-color: #db7200 !important;
+  border-color: #db7200 !important;
+}
+.v-application .warning--text.text--darken-1 {
+  color: #db7200 !important;
+  caret-color: #db7200 !important;
+}
+.v-application .warning.darken-2 {
+  background-color: #bb5900 !important;
+  border-color: #bb5900 !important;
+}
+.v-application .warning--text.text--darken-2 {
+  color: #bb5900 !important;
+  caret-color: #bb5900 !important;
+}
+.v-application .warning.darken-3 {
+  background-color: #9d4000 !important;
+  border-color: #9d4000 !important;
+}
+.v-application .warning--text.text--darken-3 {
+  color: #9d4000 !important;
+  caret-color: #9d4000 !important;
+}
+.v-application .warning.darken-4 {
+  background-color: #802700 !important;
+  border-color: #802700 !important;
+}
+.v-application .warning--text.text--darken-4 {
+  color: #802700 !important;
+  caret-color: #802700 !important;
+}</style></head>
+
+<body>
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5G2JNZH"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript) -->
+
+    <input name="__RequestVerificationToken" type="hidden" value="" style="">
+    <noscript>
+        <strong>We're sorry but you need to have JavaScript enabled in your browser. Please enable it to continue.</strong>
+    </noscript>
+
+    <main id="app" class="main"><section class="html-renderer"><div data-v-f4adcef0="" class="browser-message is-hidden" aria-hidden="true" style=""><p data-v-f4adcef0="" class="mb-0 max-w-4xl"> This website is only available in English and Dutch. We noticed your browser language is different. We are happy to help you in your own language through the livechat. <button data-v-f4adcef0="" class="text-white underline hover:no-underline"> Click here to go directly to the livechat </button></p><button data-v-f4adcef0="" class="btn-close" aria-label="close browser message"><svg data-v-f4adcef0="" viewBox="0 0 413.348 413.348" xmlns="http://www.w3.org/2000/svg" class="icon"><path d="m413.348 24.354-24.354-24.354-182.32 182.32-182.32-182.32-24.354 24.354 182.32 182.32-182.32 182.32 24.354 24.354 182.32-182.32 182.32 182.32 24.354-24.354-182.32-182.32z"></path></svg></button></div> <a href="#main" class="sr-only">
+                    Skip to content
+                </a> <div data-v-36d42726="" class="flex justify-center sticky z-[410] header-sticky-wrapper" style=""><header data-v-36d42726="" class="header transition-all lg:h-28"><div data-v-36d42726="" class="hidden lg:block w-full h-10 absolute top-0 right-0 bg-gradient-to-l from-gray-50 to-transparent z-[-1] opacity-100"></div><div data-v-36d42726="" class="header-inner"><div data-v-36d42726="" class="header-logo"><div data-v-36d42726="" class="header-logo-primary lg:top-2"><a data-v-36d42726="" href="/" aria-label="Terug naar de homepage"><div data-v-36d42726="" class="logo"><svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 401.41 388" logo-text="Logo van Partou" class="logo-icon"><defs><clipPath id="clippath"><path d="M-38.01-38h452.46v452.46H-38.01z" class="cls-4"></path></clipPath><clipPath id="clippath-1"><path d="M307.08 164.43v26.65c0 3.4-1.12 6.29-3.43 8.83-2.26 2.42-4.8 3.59-7.77 3.59s-5.58-1.18-7.83-3.58c-2.27-2.49-3.37-5.38-3.37-8.84v-26.65h-7.4v25.97c0 5.9 1.75 10.9 5.21 14.87 3.55 3.99 8.06 6.02 13.39 6.02s9.84-2.03 13.32-6.02c3.5-3.93 5.28-8.94 5.28-14.87v-25.97h-7.4Zm-110.21-.08c-10.31 0-15.53 4.91-15.53 14.6v31.26h7.4v-30.26c0-5.77 2.36-8.12 8.13-8.12h1.02v-7.49h-1.02ZM93.11 198.94c-2.78-3.19-4.15-6.85-4.22-11.17-.06-4.6 1.32-8.5 4.22-11.91 2.72-3.13 5.89-4.66 9.66-4.66.25 0 .5 0 .75.02h.01c3.78.14 6.94 1.8 9.65 5.08 2.73 3.29 4.02 7.02 3.95 11.39-.06 4.41-1.48 8.09-4.34 11.23-2.8 3.08-6.07 4.58-10 4.58s-7.04-1.49-9.7-4.56m-5.06-28.57c-4.29 4.73-6.47 10.43-6.47 16.96v38.24h7.19v-20.39c3.83 3.85 8.42 5.91 13.67 6.11 5.98.26 11.23-2.06 15.59-6.86 4.29-4.8 6.47-10.58 6.47-17.18s-2.03-11.91-6.04-16.55c-4.02-4.66-8.99-7.1-14.76-7.26-.29-.01-.57-.02-.86-.02-5.66 0-10.61 2.34-14.81 6.95m151.74 28.05c-2.64-3.19-3.95-7.05-3.88-11.47.07-4.47 1.47-8.14 4.27-11.23 2.8-3.08 6-4.58 9.8-4.58 3.89-.01 7.1 1.43 9.82 4.57 2.75 3.18 4.16 6.84 4.29 11.17.07 4.62-1.34 8.52-4.29 11.91-2.84 3.33-6.22 4.85-10.34 4.63h-.02c-3.82-.14-6.98-1.78-9.65-5.01m-4.81-28.12c-4.29 4.72-6.48 10.48-6.48 17.11s2.01 11.96 5.97 16.55c4.02 4.66 9.01 7.1 14.83 7.26.29.01.57.02.85.02 5.63 0 10.59-2.31 14.74-6.87 4.34-4.78 6.55-10.51 6.55-17.03s-2.04-11.91-6.04-16.55c-3.97-4.68-8.95-7.17-14.83-7.42-.29-.01-.58-.02-.86-.02-5.63 0-10.6 2.35-14.72 6.95m-83.66 33.13c-3.86-.22-7.02-1.88-9.67-5.08-2.65-3.19-3.95-7.05-3.88-11.46.07-4.47 1.47-8.14 4.27-11.23 2.8-3.08 6.1-4.58 10.07-4.58s7.01 1.53 9.63 4.56c2.77 3.2 4.15 6.85 4.22 11.17.07 4.67-1.33 8.59-4.29 11.98-2.73 3.14-5.9 4.66-9.63 4.66-.24 0-.47 0-.72-.02m-14.48-33.21c-4.3 4.73-6.48 10.49-6.48 17.11s2.04 11.9 6.04 16.55c3.99 4.63 8.95 7.09 14.76 7.33.27.01.53.02.79.02 5.41 0 10.15-2.07 14.14-6.16v5.15h7.19v-22.93c.22-6.3-1.74-11.86-5.83-16.51-4.04-4.68-9.07-7.17-14.97-7.42-.31-.01-.62-.02-.92-.02-5.73 0-10.67 2.33-14.73 6.88m71.81-21.13v15.27h-5.19v7.49h5.19v24.7c0 9.69 5.22 14.6 15.53 14.6h1.02v-6.87h-1.02c-5.54 0-8.13-2.77-8.13-8.73v-23.7h9.14v-7.49h-9.14v-15.27h-7.4ZM93.81 311.72c-21.2-15.57-40.4-82.14-40.4-132.15 0-30.54 2.42-52.78 7.28-74.18 6.62-29.15 18.88-48.03 62.26-55.31 43.39-7.29 102.01-.66 144.07 13.58 42.06 14.24 57.3 44.71 64.91 74.85 7.62 30.14 10.6 99.03-18.21 134.46-28.81 35.44-89.09 54.65-131.15 56.97-6.46.36-12.53.54-18.26.54-31.54 0-52.56-5.58-70.5-18.76M41.28 66.77C22.59 92.22 16.62 122.84 19.4 173.35c2.78 50.5 25.85 122.88 68.41 157.48 42.55 34.6 125.27 31.02 161.46 21.87 36.19-9.15 72.78-27.44 89.88-77.95 17.1-50.51 25.05-120.9 16.3-172.99-8.75-52.1-31.42-66.81-66.41-74.76-25.71-5.84-52.4-8.75-89.08-8.75-60.05 0-139.99 23.06-158.67 48.52" class="cls-4"></path></clipPath><clipPath id="clippath-2"><path d="M218.71 291.3c-4.5 42.82 28.02 81.33 72.62 86.02 44.61 4.69 84.42-26.22 88.92-69.04 4.5-42.82-28.01-81.33-72.62-86.02-3-.32-5.99-.47-8.94-.47-40.87 0-75.78 29.58-79.98 69.51" class="cls-4"></path></clipPath><clipPath id="clippath-3"><path d="M-38.01-38h452.46v452.46H-38.01z" class="cls-4"></path></clipPath><linearGradient id="linear-gradient" x1="-341.08" x2="-338.17" y1="725.22" y2="725.22" gradientTransform="matrix(121.58 0 0 -121.58 41492.41 88361.11)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#572555"></stop><stop offset=".65" stop-color="#eb5f5f"></stop><stop offset="1" stop-color="#f7a70b"></stop></linearGradient><linearGradient id="linear-gradient-2" x1="-337.25" x2="-334.34" y1="731.28" y2="731.28" gradientTransform="matrix(0 55.79 55.79 0 -40496.92 19035.09)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#caa53f"></stop><stop offset=".1" stop-color="#cba643"></stop><stop offset=".2" stop-color="#cfac4f"></stop><stop offset=".3" stop-color="#d5b663"></stop><stop offset=".34" stop-color="#d8ba6b"></stop><stop offset=".38" stop-color="#d5b663"></stop><stop offset=".49" stop-color="#d0ae52"></stop><stop offset=".62" stop-color="#cda948"></stop><stop offset=".77" stop-color="#cda845"></stop><stop offset=".99" stop-color="#eace89"></stop><stop offset="1" stop-color="#eace89"></stop><stop offset="1" stop-color="#eace89"></stop></linearGradient><style>.cls-3{fill:#fff}.cls-4{fill:none}</style></defs><path d="M313.72 272.97c-28.81 35.44-89.09 54.65-131.15 56.97-42.06 2.32-67.57-2.65-88.76-18.22-21.2-15.57-40.4-82.14-40.4-132.15 0-30.55 2.42-52.78 7.28-74.19 6.62-29.15 18.88-48.02 62.26-55.31 43.39-7.29 102.01-.66 144.07 13.58 42.06 14.24 57.3 44.71 64.91 74.85 7.62 30.14 10.6 99.03-18.21 134.47" class="cls-3" style="clip-path: url(&quot;#clippath&quot;);"></path><g style="clip-path: url(&quot;#clippath-1&quot;);"><path d="M-32.28-30.71h445.36v445.12H-32.28z" transform="rotate(-20 190.4 191.838)" style="fill: url(&quot;#linear-gradient&quot;);"></path></g><g style="clip-path: url(&quot;#clippath-2&quot;);"><path d="M210.89 208.72h177.18v186.36H210.89z" transform="rotate(-84 299.479 301.899)" style="fill: url(&quot;#linear-gradient-2&quot;);"></path></g><path d="M288.36 252.51c-.56 5.35-.96 9.51-1.2 12.49-.24 2.98-.4 5.63-.5 7.94-.94-.32-2.97-.69-6.08-1.09-3.11-.4-6.23-.77-9.35-1.1l-20.72-2.18-3.94 17.16c2.09-1.28 4.81-2.23 8.19-2.86 3.37-.62 7.28-.7 11.74-.23 7.95.83 13.59 3.19 16.94 7.07 3.35 3.88 4.76 8.27 4.25 13.18-.45 4.31-2.29 8.02-5.51 11.14-3.22 3.11-7.33 5.63-12.34 7.55-5.01 1.91-10.47 3.2-16.4 3.85-5.93.65-11.82.67-17.69.06l.21-2c4.76.42 9.4-.12 13.91-1.63 4.51-1.52 8.36-4.02 11.55-7.52 3.18-3.5 5.05-7.88 5.61-13.15.48-4.6-.15-8.24-1.9-10.9s-4.59-4.2-8.53-4.61c-2.3-.24-4.33-.08-6.08.49s-3.43 1.4-5.05 2.51l-1.65-1.41 8.24-35.52c.8.23 1.74.45 2.81.63 1.07.19 2.12.34 3.16.44l22.17 2.33c1.63.17 2.91.04 3.81-.39.91-.43 1.5-1.27 1.79-2.52l2.56.27ZM334.18 259.13c6.39.67 11.88 2.49 16.49 5.45 4.61 2.96 8.07 6.8 10.39 11.51 2.32 4.71 3.17 10.04 2.54 15.98-.62 5.94-2.6 11.14-5.92 15.6-3.32 4.46-7.65 7.79-12.99 10.01-5.34 2.22-11.39 2.97-18.15 2.26-6.24-.66-11.68-2.47-16.33-5.43-4.64-2.97-8.14-6.83-10.5-11.58-2.35-4.75-3.22-10.1-2.59-16.04.62-5.87 2.56-11.01 5.85-15.44 3.28-4.42 7.61-7.76 12.99-10.01s11.45-3.02 18.21-2.31Zm-1.21 1.9c-3.42-.36-6.53 1.9-9.33 6.79-2.81 4.89-4.68 11.86-5.63 20.92-.7 6.68-.68 12.15.08 16.4.75 4.25 2 7.4 3.74 9.46 1.74 2.06 3.72 3.21 5.95 3.44 3.49.37 6.62-1.91 9.39-6.84 2.77-4.93 4.63-11.92 5.58-20.98.7-6.69.67-12.13-.08-16.34-.76-4.21-1.99-7.34-3.69-9.4-1.7-2.05-3.7-3.2-6-3.45Z" class="cls-3"></path><g style="clip-path: url(&quot;#clippath-3&quot;);"><path d="M352.13 320.3c-2.7-.29-5.01.53-6.9 2.45l.3-2.85-5.99-.63-2.51 23.91 6.52.69 1.25-11.93c.21-2.03.95-3.51 2.2-4.46s2.88-1.31 4.88-1.1l1.74.18.61-5.75c-.59-.26-1.29-.43-2.1-.51m-28.75 15.85c-1.04.79-2.29 1.1-3.74.95-1.03-.11-1.83-.43-2.41-.96-.58-.53-.83-1.2-.74-2.01.17-1.61 1.37-2.3 3.59-2.06l5.12.54-.03.29c-.15 1.39-.74 2.47-1.78 3.26m6.89-15.69c-1.65-1.98-4.05-3.14-7.2-3.47-4.19-.44-7.84.84-10.95 3.83l2.96 4.36c1.22-1.05 2.34-1.77 3.35-2.19 1.02-.41 2.13-.56 3.32-.43 1.45.15 2.51.63 3.19 1.44.68.8.95 1.88.81 3.23l-.11 1.06-5.99-.63c-2.77-.29-5.03.1-6.79 1.16-1.76 1.07-2.75 2.68-2.98 4.84-.22 2.13.35 3.92 1.7 5.4 1.36 1.48 3.3 2.35 5.81 2.61 3 .31 5.53-.4 7.6-2.13l-.24 2.32 5.99.63 1.49-14.2c.34-3.25-.31-5.87-1.96-7.85m-33.23 12.94c-1.04.79-2.29 1.1-3.74.95-1.03-.11-1.84-.43-2.42-.96-.58-.53-.82-1.2-.74-2.01.17-1.61 1.37-2.3 3.59-2.07l5.12.54-.03.29c-.15 1.38-.74 2.47-1.78 3.26m6.9-15.69c-1.65-1.98-4.05-3.14-7.21-3.47-4.19-.44-7.84.84-10.95 3.83l2.96 4.36c1.22-1.05 2.34-1.77 3.36-2.19 1.02-.41 2.13-.56 3.32-.43 1.45.15 2.52.63 3.19 1.44.68.8.95 1.88.81 3.23l-.11 1.06-5.99-.63c-2.77-.29-5.03.1-6.79 1.17-1.76 1.07-2.75 2.68-2.98 4.84-.22 2.13.34 3.93 1.7 5.41 1.36 1.48 3.29 2.35 5.81 2.61 2.99.31 5.53-.4 7.6-2.13l-.24 2.32 5.99.63 1.49-14.2c.34-3.25-.31-5.87-1.96-7.85m-29.15-11.15c.72.86 1.67 1.35 2.82 1.47 1.16.12 2.19-.16 3.09-.85s1.41-1.59 1.53-2.72c.12-1.16-.19-2.17-.93-3.03-.74-.86-1.69-1.35-2.85-1.47-1.16-.12-2.18.16-3.07.85-.89.69-1.39 1.61-1.51 2.77-.12 1.13.18 2.12.91 2.98m-7.04 38.72c2.9.31 5.23-.22 7-1.58 1.77-1.36 2.81-3.51 3.12-6.43l2.54-24.2-6.52-.69-2.48 23.62c-.14 1.32-.59 2.23-1.34 2.74s-1.87.68-3.35.53c-.55-.06-1.2-.17-1.97-.35l-.57 5.46c1.12.47 2.31.78 3.57.91" style="fill: rgb(87, 35, 84);"></path></g></svg><!----><!----><!----></div></a><!----></div><!----></div><div data-v-36d42726="" class="header-top transition-opacity opacity-100"><div data-v-36d42726="" class="navigation-meta"><ul class="navigation-meta-list"><li class="navigation-meta-list-item"><a href="/over-partou/" class="navigation-meta-list-link"> Over Partou </a></li><li class="navigation-meta-list-item"><a href="/50-jaar/" class="navigation-meta-list-link"> Partou 50 jaar </a></li><li class="navigation-meta-list-item"><a href="https://mijnpartou.nl/weten/" target="_blank" class="navigation-meta-list-link"> Service </a></li><li class="navigation-meta-list-item"><a href="https://www.werkenbijpartou.nl/" target="_blank" class="navigation-meta-list-link"> Werken bij </a></li><li class="navigation-meta-list-item"><div class="language-selector"><ul class="flex"><li class="text-sm text-black"><button class="text-sm text-black uppercase hover:underline hover:underline-offset-4 underline-offset-4"><abbr title="English ">en</abbr></button><span class="mx-2">|</span></li><li class="text-sm text-black"><button class="text-sm text-black uppercase hover:underline hover:underline-offset-4 underline-offset-4 underline"><abbr title="Nederlands ">nl</abbr></button><!----></li></ul><div class="language-modal" style="display: none;"><div class="modal-overlay"></div><div id="modal-title" role="dialog" aria-labelledby="modal-title" aria-modal="true" class="modal"><div class="modal-content-wrapper"><header class="modal-header"><button type="button" aria-label="Close modal" class="btn-close hidden"><svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon"><g filter="url(#filter0_d)"><circle cx="20" cy="19" r="16" fill="white"></circle></g><path d="M27.5834 12.9442L26.0559 11.4167L20.0001 17.4726L13.9442 11.4167L12.4167 12.9442L18.4726 19.0001L12.4167 25.0559L13.9442 26.5834L20.0001 20.5276L26.0559 26.5834L27.5834 25.0559L21.5276 19.0001L27.5834 12.9442Z" fill="#343432"></path><defs><filter id="filter0_d" x="0" y="0" width="40" height="40" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood><feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix><feOffset dy="1"></feOffset><feGaussianBlur stdDeviation="2"></feGaussianBlur><feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"></feColorMatrix><feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"></feBlend><feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"></feBlend></filter></defs></svg></button></header><section class="modal-body"><div class="hc-stage-content"><h3 class="h3"> Not available in English </h3><p class="text-base my-4"> This page is only available in Dutch. You can either go back to the page or to the English homepage </p><div class="flex flex-col lg:flex-row gap-6 my-4"><a href="/en" class="link btn"><button class="btn btn-primary" aria-disabled="true"> Homepage </button></a><button class="btn btn-secondary"> Back </button></div><div class="pt-4 text-xs richtext"><div>If you have questions about this page, don’t hesitate to contact us via <a href="https://mijnpartou.nl/en/contact/" target="_self">https://mijnpartou.nl/en/contact</a>.</div></div></div></section></div></div></div></div></li></ul></div></div><div data-v-36d42726="" class="header-bottom"><nav data-v-36d42726="" id="navigation" class="main-navigation is-closed"><ul class="main-navigation-list transition-opacity pt-4 opacity-100"><!----><div class="flex lg:hidden flex-row gap-2 w-full flex-wrap items-center mb-6"><a href="/rondleiding/" class="link h-12 text-base w-fit is-button-secondary first-button"><span class="flex justify-center items-center gap-2"><img src="/media/2dwop0ss/rondeidingen.svg" alt="Rondleiding" class="h-4 w-4"><span>Rondleiding</span></span></a><a href="/kinderopvang/" class="link h-12 text-base w-fit is-button-secondary"><span class="flex justify-center items-center gap-2"><img src="/media/luxelrl0/location.svg" alt="Locatie vinden" class="h-4 w-4"><span>Locatie vinden</span></span></a></div><li class="main-navigation-list-item"><button id="main-nav-item-0" aria-controls="submenu-0" tabindex="0" class="main-navigation-list-link is-toggle"> Kinderdagverblijf </button><div class="hidden lg:block absolute top-12 z-10 left-0 bg-white px-6 pt-5 pb-4 rounded-sm shadow w-max" style="display: none;"><ul id="submenu-0" role="menu" class="sub-navigation-list"><li role="none" class="h-9 flex items-center"><a href="/kinderdagverblijf/" role="menuitem" class="no-underline text-base text-primary-bravo h-full w-full hover:text-primary-alpha font-medium"> Kinderdagverblijf </a></li><li role="none" class="h-9 flex items-center"><a href="https://pedagogiek.partou.nl/pedagogisch-beleid/welkom-bij-partou" role="menuitem" class="no-underline text-base text-primary-bravo h-full w-full hover:text-primary-alpha font-medium"> Partou Pedagogiek </a></li><li role="none" class="h-9 flex items-center"><a href="/ontwikkeling/" role="menuitem" class="no-underline text-base text-primary-bravo h-full w-full hover:text-primary-alpha font-medium"> Ontwikkeling op maat </a></li><li role="none" class="h-9 flex items-center"><a href="/voeding/" role="menuitem" class="no-underline text-base text-primary-bravo h-full w-full hover:text-primary-alpha font-medium"> Gezonde voeding </a></li><hr class="mt-1 mb-3 border-t border-gray-100/25"><li role="none" class="h-10 flex items-center"><a href="/rekentool/" role="menuitem" class="flex flex-row gap-3 items-center no-underline text-sm text-primary-bravo h-full w-full font-medium"><img src="/media/ocpjkdez/icon_declareren1.svg" alt="Kosten berekenen" class="h-6 w-6 object-cover"><span>Kosten berekenen</span></a></li><li role="none" class="h-10 flex items-center"><a href="/app/" role="menuitem" class="flex flex-row gap-3 items-center no-underline text-sm text-primary-bravo h-full w-full font-medium"><img src="/media/uttdotg4/icon_bedrijfseigendom-recht-wijzigen-1.svg" alt="Partou ouder-app" class="h-6 w-6 object-cover"><span>Partou ouder-app</span></a></li></ul></div><ul class="sub-navigation-list-small"><li class="sub-navigation-list-item-small mb-3"><a href="/kinderdagverblijf/" class="sub-navigation-list-link-small font-medium"> Kinderdagverblijf </a></li><li class="sub-navigation-list-item-small mb-3"><a href="https://pedagogiek.partou.nl/pedagogisch-beleid/welkom-bij-partou" class="sub-navigation-list-link-small font-medium"> Partou Pedagogiek </a></li><li class="sub-navigation-list-item-small mb-3"><a href="/ontwikkeling/" class="sub-navigation-list-link-small font-medium"> Ontwikkeling op maat </a></li><li class="sub-navigation-list-item-small mb-3"><a href="/voeding/" class="sub-navigation-list-link-small font-medium"> Gezonde voeding </a></li><hr class="border-t border-gray-100/25 my-2 lg:hidden"><li class="sub-navigation-list-item-small text-sm font-medium flex items-center gap-3 mb-3"><img src="/media/ocpjkdez/icon_declareren1.svg" alt="Kosten berekenen" class="h-6 w-6 object-cover flex-shrink-0"><a href="/rekentool/" class="sub-navigation-list-link-small flex-1"> Kosten berekenen </a></li><li class="sub-navigation-list-item-small text-sm font-medium flex items-center gap-3 mb-3"><img src="/media/uttdotg4/icon_bedrijfseigendom-recht-wijzigen-1.svg" alt="Partou ouder-app" class="h-6 w-6 object-cover flex-shrink-0"><a href="/app/" class="sub-navigation-list-link-small flex-1"> Partou ouder-app </a></li></ul></li><li class="main-navigation-list-item"><button id="main-nav-item-1" aria-controls="submenu-1" tabindex="0" class="main-navigation-list-link is-toggle"> Buitenschoolse opvang </button><div class="hidden lg:block absolute top-12 z-10 left-0 bg-white px-6 pt-5 pb-4 rounded-sm shadow w-max" style="display: none;"><ul id="submenu-1" role="menu" class="sub-navigation-list"><li role="none" class="h-9 flex items-center"><a href="/bso/" role="menuitem" class="no-underline text-base text-primary-bravo h-full w-full hover:text-primary-alpha font-medium"> Buitenschoolse opvang </a></li><li role="none" class="h-9 flex items-center"><a href="https://pedagogiek.partou.nl/pedagogisch-beleid/welkom-bij-partou" role="menuitem" class="no-underline text-base text-primary-bravo h-full w-full hover:text-primary-alpha font-medium"> Partou Pedagogiek </a></li><li role="none" class="h-9 flex items-center"><a href="/activiteiten/" role="menuitem" class="no-underline text-base text-primary-bravo h-full w-full hover:text-primary-alpha font-medium"> Activiteiten </a></li><li role="none" class="h-9 flex items-center"><a href="/voeding/" role="menuitem" class="no-underline text-base text-primary-bravo h-full w-full hover:text-primary-alpha font-medium"> Gezonde voeding </a></li><li role="none" class="h-9 flex items-center"><a href="/actueel/vakantie-op-de-buitenschoolse-opvang/" role="menuitem" class="no-underline text-base text-primary-bravo h-full w-full hover:text-primary-alpha font-medium"> Vakantie op de bso </a></li><hr class="mt-1 mb-3 border-t border-gray-100/25"><li role="none" class="h-10 flex items-center"><a href="/rekentool/" role="menuitem" class="flex flex-row gap-3 items-center no-underline text-sm text-primary-bravo h-full w-full font-medium"><img src="/media/uyvdw4tr/icon_declaraties-1.svg" alt="Kosten berekenen" class="h-6 w-6 object-cover"><span>Kosten berekenen</span></a></li><li role="none" class="h-10 flex items-center"><a href="/app/" role="menuitem" class="flex flex-row gap-3 items-center no-underline text-sm text-primary-bravo h-full w-full font-medium"><img src="/media/uttdotg4/icon_bedrijfseigendom-recht-wijzigen-1.svg" alt="Partou ouder-app" class="h-6 w-6 object-cover"><span>Partou ouder-app</span></a></li></ul></div><ul class="sub-navigation-list-small"><li class="sub-navigation-list-item-small mb-3"><a href="/bso/" class="sub-navigation-list-link-small font-medium"> Buitenschoolse opvang </a></li><li class="sub-navigation-list-item-small mb-3"><a href="https://pedagogiek.partou.nl/pedagogisch-beleid/welkom-bij-partou" class="sub-navigation-list-link-small font-medium"> Partou Pedagogiek </a></li><li class="sub-navigation-list-item-small mb-3"><a href="/activiteiten/" class="sub-navigation-list-link-small font-medium"> Activiteiten </a></li><li class="sub-navigation-list-item-small mb-3"><a href="/voeding/" class="sub-navigation-list-link-small font-medium"> Gezonde voeding </a></li><li class="sub-navigation-list-item-small mb-3"><a href="/actueel/vakantie-op-de-buitenschoolse-opvang/" class="sub-navigation-list-link-small font-medium"> Vakantie op de bso </a></li><hr class="border-t border-gray-100/25 my-2 lg:hidden"><li class="sub-navigation-list-item-small text-sm font-medium flex items-center gap-3 mb-3"><img src="/media/uyvdw4tr/icon_declaraties-1.svg" alt="Kosten berekenen" class="h-6 w-6 object-cover flex-shrink-0"><a href="/rekentool/" class="sub-navigation-list-link-small flex-1"> Kosten berekenen </a></li><li class="sub-navigation-list-item-small text-sm font-medium flex items-center gap-3 mb-3"><img src="/media/uttdotg4/icon_bedrijfseigendom-recht-wijzigen-1.svg" alt="Partou ouder-app" class="h-6 w-6 object-cover flex-shrink-0"><a href="/app/" class="sub-navigation-list-link-small flex-1"> Partou ouder-app </a></li></ul></li><li class="main-navigation-list-item"><button id="main-nav-item-2" aria-controls="submenu-2" tabindex="0" class="main-navigation-list-link is-toggle"> Peuteropvang </button><div class="hidden lg:block absolute top-12 z-10 left-0 bg-white px-6 pt-5 pb-4 rounded-sm shadow w-max" style="display: none;"><ul id="submenu-2" role="menu" class="sub-navigation-list"><li role="none" class="h-9 flex items-center"><a href="/peuteropvang/" role="menuitem" class="no-underline text-base text-primary-bravo h-full w-full hover:text-primary-alpha font-medium"> Peuteropvang </a></li><li role="none" class="h-9 flex items-center"><a href="https://pedagogiek.partou.nl/pedagogisch-beleid/welkom-bij-partou" role="menuitem" class="no-underline text-base text-primary-bravo h-full w-full hover:text-primary-alpha font-medium"> Partou Pedagogiek </a></li><li role="none" class="h-9 flex items-center"><a href="/actueel/voordelen-van-de-peuteropvang/" role="menuitem" class="no-underline text-base text-primary-bravo h-full w-full hover:text-primary-alpha font-medium"> Voorbereiding op school </a></li><hr class="mt-1 mb-3 border-t border-gray-100/25"><li role="none" class="h-10 flex items-center"><a href="/rekentool/" role="menuitem" class="flex flex-row gap-3 items-center no-underline text-sm text-primary-bravo h-full w-full font-medium"><img src="/media/ocpjkdez/icon_declareren1.svg" alt="Kosten berekenen" class="h-6 w-6 object-cover"><span>Kosten berekenen</span></a></li><li role="none" class="h-10 flex items-center"><a href="/app/" role="menuitem" class="flex flex-row gap-3 items-center no-underline text-sm text-primary-bravo h-full w-full font-medium"><img src="/media/uttdotg4/icon_bedrijfseigendom-recht-wijzigen-1.svg" alt="Partou ouder-app" class="h-6 w-6 object-cover"><span>Partou ouder-app</span></a></li></ul></div><ul class="sub-navigation-list-small"><li class="sub-navigation-list-item-small mb-3"><a href="/peuteropvang/" class="sub-navigation-list-link-small font-medium"> Peuteropvang </a></li><li class="sub-navigation-list-item-small mb-3"><a href="https://pedagogiek.partou.nl/pedagogisch-beleid/welkom-bij-partou" class="sub-navigation-list-link-small font-medium"> Partou Pedagogiek </a></li><li class="sub-navigation-list-item-small mb-3"><a href="/actueel/voordelen-van-de-peuteropvang/" class="sub-navigation-list-link-small font-medium"> Voorbereiding op school </a></li><hr class="border-t border-gray-100/25 my-2 lg:hidden"><li class="sub-navigation-list-item-small text-sm font-medium flex items-center gap-3 mb-3"><img src="/media/ocpjkdez/icon_declareren1.svg" alt="Kosten berekenen" class="h-6 w-6 object-cover flex-shrink-0"><a href="/rekentool/" class="sub-navigation-list-link-small flex-1"> Kosten berekenen </a></li><li class="sub-navigation-list-item-small text-sm font-medium flex items-center gap-3 mb-3"><img src="/media/uttdotg4/icon_bedrijfseigendom-recht-wijzigen-1.svg" alt="Partou ouder-app" class="h-6 w-6 object-cover flex-shrink-0"><a href="/app/" class="sub-navigation-list-link-small flex-1"> Partou ouder-app </a></li></ul></li></ul><div class="main-navigation-end"><!----><div class="hidden lg:flex flex-row gap-2 mb-2"><a href="/rondleiding/" class="link h-12 text-base w-fit is-button-secondary first-button"><span class="flex justify-center items-center gap-2"><img src="/media/2dwop0ss/rondeidingen.svg" alt="Rondleiding" class="h-4 w-4"><span>Rondleiding</span></span></a><a href="/kinderopvang/" class="link h-12 text-base w-fit is-button-secondary"><span class="flex justify-center items-center gap-2"><img src="/media/luxelrl0/location.svg" alt="Locatie vinden" class="h-4 w-4"><span>Locatie vinden</span></span></a></div></div><div data-v-36d42726="" class="navigation-meta only-small bg-gray-50 pb-4"><ul class="navigation-meta-list"><li class="navigation-meta-list-item"><a href="/over-partou/" class="navigation-meta-list-link"> Over Partou </a></li><li class="navigation-meta-list-item"><a href="/50-jaar/" class="navigation-meta-list-link"> Partou 50 jaar </a></li><li class="navigation-meta-list-item"><a href="https://mijnpartou.nl/weten/" target="_blank" class="navigation-meta-list-link"> Service </a></li><li class="navigation-meta-list-item"><a href="https://www.werkenbijpartou.nl/" target="_blank" class="navigation-meta-list-link"> Werken bij </a></li><li class="navigation-meta-list-item"><div class="language-selector"><ul class="flex"><li class="text-sm text-black"><button class="text-sm text-black uppercase hover:underline hover:underline-offset-4 underline-offset-4"><abbr title="English ">en</abbr></button><span class="mx-2">|</span></li><li class="text-sm text-black"><button class="text-sm text-black uppercase hover:underline hover:underline-offset-4 underline-offset-4 underline"><abbr title="Nederlands ">nl</abbr></button><!----></li></ul><div class="language-modal" style="display: none;"><div class="modal-overlay"></div><div id="modal-title" role="dialog" aria-labelledby="modal-title" aria-modal="true" class="modal"><div class="modal-content-wrapper"><header class="modal-header"><button type="button" aria-label="Close modal" class="btn-close hidden"><svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon"><g filter="url(#filter0_d)"><circle cx="20" cy="19" r="16" fill="white"></circle></g><path d="M27.5834 12.9442L26.0559 11.4167L20.0001 17.4726L13.9442 11.4167L12.4167 12.9442L18.4726 19.0001L12.4167 25.0559L13.9442 26.5834L20.0001 20.5276L26.0559 26.5834L27.5834 25.0559L21.5276 19.0001L27.5834 12.9442Z" fill="#343432"></path><defs><filter id="filter0_d" x="0" y="0" width="40" height="40" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood><feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix><feOffset dy="1"></feOffset><feGaussianBlur stdDeviation="2"></feGaussianBlur><feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"></feColorMatrix><feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"></feBlend><feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"></feBlend></filter></defs></svg></button></header><section class="modal-body"><div class="hc-stage-content"><h3 class="h3"> Not available in English </h3><p class="text-base my-4"> This page is only available in Dutch. You can either go back to the page or to the English homepage </p><div class="flex flex-col lg:flex-row gap-6 my-4"><a href="/en" class="link btn"><button class="btn btn-primary" aria-disabled="true"> Homepage </button></a><button class="btn btn-secondary"> Back </button></div><div class="pt-4 text-xs richtext"><div>If you have questions about this page, don’t hesitate to contact us via <a href="https://mijnpartou.nl/en/contact/" target="_self">https://mijnpartou.nl/en/contact</a>.</div></div></div></section></div></div></div></div></li></ul></div></nav></div><a data-v-36d42726="" href="" class="link header-cta hidden lg:visible is-button-secondary">  </a><div data-v-36d42726="" class="header-menu-btn lg:hidden"><!----><button data-v-36d42726="" class="btn-nav"><div data-v-36d42726=""><span data-v-36d42726="" class="absolute right-7 bottom-0">Menu</span><div data-v-36d42726="" class="block"><span data-v-36d42726="" aria-hidden="true" class="btn-nav__line btn-nav__line--first"></span><span data-v-36d42726="" aria-hidden="true" class="btn-nav__line btn-nav__line--second"></span><span data-v-36d42726="" aria-hidden="true" class="btn-nav__line btn-nav__line--third"></span></div></div><span data-v-36d42726="" class="sr-only">Open Menu</span></button></div></div><!----></header></div> <div id="main"><div class="umb-block-list"><section class="hnc"><div class="hnc-inner"><nav aria-label="Broodkruimels navigatie"><ul class="breadcrumb"><li class="breadcrumb-item"><a href="/" aria-label="Homepage" class="breadcrumb-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" title="Homepage" class="icon scale-90 text-primary-bravo"><path fill="currentColor" d="m16 9.226-8-6.21-8 6.21V6.694l8-6.21 8 6.21zM14 9v6h-4v-4H6v4H2V9l6-4.5z" class="w-full h-full"></path></svg></a></li><li class="breadcrumb-item"> Rekentool </li></ul></nav><div class="hnc-stage"><div class="hnc-stage-content"><h1 class="hnc-title"> Bereken je kinderopvangkosten: eenvoudig en snel </h1><div class="hnc-stage-meta"><!----><p class="hnc-paragraph"> Benieuwd wat kinderopvang jou straks gaat kosten? Met onze rekentool zie je het binnen een paar minuten. Vul een paar gegevens in en je krijgt direct een persoonlijke schatting van je maandelijkse kosten, inclusief kinderopvangtoeslag. Handig als je je aan het oriënteren bent op opvang voor je (eerste) kind!  </p><!----></div><div class="hnc-stage-image"><div class="hnc-stage-image-wrapper"><svg width="0" height="0" aria-hidden="true" viewBox="0 0 1 1" xmlns="http://www.w3.org/2000/svg"><defs><clipPath id="shape-blob-rotated" clipPathUnits="objectBoundingBox"><path d="m.22964551.05627422-.00588932.00263225-.00587822.0026976-.00586389.00276564-.00584632.00283636-.0058255.00290975c-.00096901.00049123-.00193701.00098562-.00290394.00148324l-.00578822.00302486-.0057593.00310495c-.08137011.04456679-.15306235.11405058-.17363524.24272555-.0238931.14944152-.01318488.34951084.03506771.49261293l.00189777.00555239c.04587819.13197116.10994812.16859281.20016952.17804769l.00592116.00057881c.00198613.00018057.00398471.00034899.00599581.00050598l.00607094.00043735c.00101811.00006741.00203937.00013213.0030638.00019426l.00308277.00017867c.01514137.00083809.03033895.00132409.04579672.00142409l.00930752.00001341c.02646901-.00009479.05380788-.0013247.08301876-.00385636l.01038909-.00094785.01055433-.00105758c.01596034-.00166948.03251145-.00371479.04980204-.00616065l.01163824-.00169019c.00587553-.00087504.01183689-.00179519.01788959-.00276138l.01222884-.00199402c.00205898-.00034265.00412852-.00069049.00620882-.00104354.06130636-.01040477.12848272-.03052287.19125936-.05579757l.01042028-.00425942c.10721881-.04449117.19969557-.1035262.22497047-.15382825.00229022-.00455799.00445868-.00914291.00650612-.01376249l.00239887-.00556062c.01833693-.04369629.02600682-.09072825.02362967-.14751921l-.000358-.00730342-.00046687-.00741242c-.00043434-.00622325-.00098179-.01256314-.0016416-.01902739l-.00084566-.0078173c-.00239866-.02100795-.00594486-.04332109-.01061413-.06719282l-.00180358-.00902546c-.00030934-.00151658-.00062307-.00303938-.00094117-.00456845l-.00196097-.0092502-.00206554-.00940374c-.00035295-.00158026-.00071025-.00316703-.00107189-.00476038-.03218588-.14180865-.13241244-.33585236-.26972762-.41344135s-.37017149-.02762481-.46840122.01571628z"></path></clipPath></defs></svg><!----><!----><div class="kf-image"><img alt="Een dreumes speelt binnen met een kleurrijke houten telraam, omringd door speelgoed in een georganiseerde ruimte." src="/media/0hdf1hzh/header-rekentool.jpg?width=600&amp;height=600&amp;rnd=134108907322800000" class=""><!----></div><div class="hnc-curve hnc-stage-curve"><div class="curve-container"><svg width="8070" height="768" viewBox="0 0 8070 768" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="curve curve-left is-svg-gray"><g clip-path="url(#clip0_1_13)"><path d="M0 762.394V556.831C2499.42 960.215 5688.44 767.501 8070 0V762.394V768H0V762.394Z" fill="currentColor"></path></g><defs><clipPath id="clip0_1_13"><rect width="8070" height="768" fill="red"></rect></clipPath></defs></svg><!----><!----><!----></div></div></div></div></div></div><div class="hnc-tabs-section grid grid-cols-12 px-2 md:px-0 bg-white md:bg-transparent"><div class="col-span-12 lg:col-span-8"><!----><!----><!----><!----></div></div><div class="hnc-stage-bottom"><div class="grid grid-cols-12 px-2 md:px-0"><div class="col-span-12 lg:col-span-8"><div class="hnc-stage-bottom-left"><div><link href="https://locaties.partou.nl/styles/fonts.css" rel="stylesheet"><kf-wc-child-benefit-calculator></kf-wc-child-benefit-calculator></div></div></div><div class="col-span-12 lg:col-span-4"><div class="hnc-stage-bottom-right"><p>Wil je advies of meer informatie? Onze afdeling Customer Support helpt je graag via <a href="mailto:support@partou.nl">support@partou.nl</a> of via 088 2357500.</p></div></div></div></div></div><div class="hnc-curve"><div class="curve-container"><svg width="8070" height="768" viewBox="0 0 8070 768" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="curve curve-left is-svg-white"><g clip-path="url(#clip0_1_13)"><path d="M0 762.394V556.831C2499.42 960.215 5688.44 767.501 8070 0V762.394V768H0V762.394Z" fill="currentColor"></path></g><defs><clipPath id="clip0_1_13"><rect width="8070" height="768" fill="red"></rect></clipPath></defs></svg><!----><!----><!----></div></div></section> <section class="row"><div class="spacer has-size-md"></div></section> <section class="row"><div class="kf-container has-size-md"><div class="text-one-column is-left-aligned"><div class="text-one-column-richtext"><div class="richtext"><h2>Wat is de rekentool van Partou?&nbsp;</h2> <p><span>De rekentool van Partou is speciaal gemaakt voor ouders die voor het eerst opvang zoeken. Want zoek je opvang voor je eerste kind? Dan vraag je je vast af hoeveel dat kost. Gelukkig hoef je dat niet zelf uit te rekenen.</span>&nbsp;</p> <p><span>Onze rekentool berekent op basis van een paar eenvoudige gegevens wat de opvang waarschijnlijk kost per maand. De rekenhulp houdt rekening met:</span>&nbsp;</p> <ul><li><span>het type opvang dat je kiest: kinderdagverblijf of bso</span></li> <li>het aantal dagen per week dat je opvang nodig hebt</li> <li>je bruto jaarinkomen (toetsingsinkomen)</li> <li>het gemiddelde tarief van de gekozen Partou-locatie&nbsp;</li></ul> <p><span>Zo krijg je snel een persoonlijk beeld van je maandelijkse </span><a href="/kosten-kinderopvang/"><span data-ccp-charstyle="Hyperlink">kinderopvangkosten</span></a><span>, inclusief kinderopvangtoeslag. Handig als je wilt weten wat er financieel mogelijk is vóórdat je je inschrijft.</span>&nbsp;</p> <h2>Hoe werkt de rekentool?&nbsp;</h2> <p><span>De rekentool berekent binnen een paar minuten een persoonlijke schatting van jouw opvangkosten.</span>&nbsp;</p> <p><span>Zo werkt het:</span>&nbsp;</p> <ul><li><span>Vul je (verzamel)inkomen in.</span></li> <li>Kies het type opvang: kinderdagverblijf of bso.</li> <li>Selecteer de plaats en de Partou-locatie.</li> <li>Geef aan welke en hoeveel dagen je opvang nodig hebt.&nbsp;</li></ul> <p><span>Klik daarna op ‘Bereken’ en je ziet direct een indicatie van wat je netto per maand betaalt, inclusief kinderopvangtoeslag.</span>&nbsp;</p> <p><span>Wil je weten wat het verschil is als je meer of minder dagen opvang neemt? Pas je keuzes aan en zie meteen het effect op je maandbedrag.</span>&nbsp;</p> <h2>Wat heb je nodig om de kinderopvangkosten te berekenen?&nbsp;</h2> <p><span>Om een goede berekening te maken, heb je maar een paar dingen nodig:</span>&nbsp;</p> <ul><li><span>je (gezamenlijk) bruto jaarinkomen (toetsingsinkomen)</span></li> <li>het aantal dagen per week dat je opvang wilt</li> <li>de locatie waar je opvang zoekt&nbsp;</li></ul> <p><span>Weet je je toetsingsinkomen niet precies? Gebruik dan de </span><a href="https://www.belastingdienst.nl/wps/wcm/connect/nl/toeslagen/content/wat-is-mijn-toetsingsinkomen"><span data-ccp-charstyle="Hyperlink">rekenhulp van de Belastingdienst</span></a><span>.</span>&nbsp;</p> <p><span>Handig: als je deze gegevens bij de hand hebt, is de berekening in een paar minuten klaar.</span>&nbsp;</p> <h2>Bruto en netto kinderopvangkosten&nbsp;</h2> <p><span>De tarieven op onze website zijn bruto kosten. Gelukkig kun je een deel van deze kosten terugkrijgen via de </span><a href="/kinderopvangtoeslag/"><span data-ccp-charstyle="Hyperlink">kinderopvangtoeslag</span></a><span> van de overheid. Wat je echt betaalt, zijn je netto kosten. En die liggen meestal een stuk lager dan de bruto kosten. Met onze rekentool zie je meteen het verschil tussen bruto en netto kosten. Zo weet je precies wat je per maand ongeveer kwijt bent, ná toeslag.</span>&nbsp;</p> <h2>Wat laat de rekentool zien?&nbsp;</h2> <p><span>Na het invullen zie je direct:</span>&nbsp;</p> <ul><li><span>je bruto maandkosten: het bedrag vóór kinderopvangtoeslag</span></li> <li>je geschatte kinderopvangtoeslag: de tegemoetkoming van de overheid</li> <li>je netto maandkosten: wat je écht betaalt&nbsp;</li></ul> <p><span>De berekening is een indicatie, gebaseerd op de standaard opvangpakketten en tarieven van Partou. Zo krijg je een goed beeld van wat kinderopvang jou waarschijnlijk gaat kosten.</span>&nbsp;</p> <p><span>De werkelijke kosten kunnen iets afwijken, bijvoorbeeld door extra’s zoals warme maaltijden of verlengde opvang. Wil je meer weten over wat de kosten van kinderopvang bepaalt? En wat er wel en niet in het uurtarief zit? Lees meer over </span><a href="/kosten-kinderopvang/"><span data-ccp-charstyle="Hyperlink">kosten van kinderopvang</span></a><span>.</span>&nbsp;</p> <p><strong>Let op!</strong>&nbsp;</p> <p>We doen ons uiterste best om de berekening zo nauwkeurig mogelijk te maken. De rekentool geeft een betrouwbare indicatie van je maandelijkse kosten, maar de werkelijke bedragen kunnen iets afwijken. Aan de uitkomst van de rekentool kunnen geen rechten worden ontleend. Partou is niet aansprakelijk voor eventuele verschillen of beslissingen die worden genomen op basis van de berekening.&nbsp;</p></div></div><div class="btn-container is-aligned-to-left"></div></div></div></section> <section class="row"><div class="kf-container has-size-md"><div class="text-one-column is-left-aligned"><div class="text-one-column-richtext"><div class="richtext"><h2>Hulp nodig?&nbsp;</h2> <p><span>Heb je vragen over de berekening of wil je hulp bij het invullen? Onze afdeling Customer Support helpt je graag verder. Neem contact op via 088 - 235 75 00 of via </span><a href="mailto:support@partou.nl"><span data-ccp-charstyle="Hyperlink">support@partou.nl.</span></a>&nbsp;</p></div></div><div class="btn-container is-aligned-to-left"></div></div></div></section> <section class="row"><div class="spacer has-size-md"></div></section> <section class="row has-color-gray"><div class="spacer has-size-md"></div></section> <section class="row has-color-gray"><div class="kf-container"><div class="text-image"><div class="grid grid-cols-12 gap-8 lg:gap-12 xl:gap-24"><div class="col-span-12 lg:col-span-5 col-first"><div class="text-image-image-container"><img src="/media/5pzprlqz/kinderen-pedagogisch-medewerker-feest.jpg?width=600&amp;height=400&amp;rnd=134063747653870000" alt=""></div></div><div class="col-span-12 lg:col-span-7 col-second"><div class="text-image-rich-text-container richtext"><h2>Partou 50 jaar!</h2> <p>Het is feest bij Partou! We bestaan namelijk 50 jaar. Al een halve eeuw helpen onze pedagogisch professionals kinderen elke dag om nieuwe ervaringen op te doen, spelenderwijs te groeien en hun eigen talenten te ontdekken. Met liefde, structuur en volop ruimte om kind te zijn, bouwen we samen aan het zelfvertrouwen, de veerkracht en het plezier waarmee ze straks vol vertrouwen de toekomst in stappen. Klaar voor de wereld van morgen.</p><div class="btn-container is-aligned-to-left"><span class=""><a href="/50-jaar/" target="_blank" rel="noopener noreferrer" class="link is-button-primary"> Lees meer over 50 jaar Partou </a></span></div></div></div></div></div></div></section> <section class="row has-color-gray"><div class="spacer has-size-md"></div></section></div></div> <footer class="footer overflow-hidden" main-logo="" background-color="white" label-first="" label-second="" label-third=""><div class="footer-top"><div class="footer-inner-top"><div class="grid grid-cols-10 w-full"><div class="col-span-10 md:col-span-4 lg:col-span-6 mb-8 md:mb-0"><ul data-v-c0b5d07a="" class="kf-list is-big"><li data-v-c0b5d07a="" class="kf-list-item"><a data-v-c0b5d07a="" href="/kinderopvang/" target="_blank" rel="noopener noreferrer" class="kf-list-link"> Vind jouw Partou </a></li><li data-v-c0b5d07a="" class="kf-list-item"><a data-v-c0b5d07a="" href="/rondleiding/" class="kf-list-link"> Vraag een rondleiding aan </a></li><li data-v-c0b5d07a="" class="kf-list-item"><a data-v-c0b5d07a="" href="/inschrijven/" class="kf-list-link"> Schrijf je kind in </a></li></ul></div><div class="col-span-10 md:col-span-3 lg:col-span-2 mb-8 md:mb-0"><ul data-v-c0b5d07a="" class="kf-list"><li data-v-c0b5d07a="" class="kf-list-item"><a data-v-c0b5d07a="" href="/rekentool/" class="kf-list-link"> Rekentool </a></li><li data-v-c0b5d07a="" class="kf-list-item"><a data-v-c0b5d07a="" href="/kosten-kinderopvang/" class="kf-list-link"> Kosten kinderopvang </a></li><li data-v-c0b5d07a="" class="kf-list-item"><a data-v-c0b5d07a="" href="/kinderopvangtoeslag/" class="kf-list-link"> Kinderopvangtoeslag </a></li><li data-v-c0b5d07a="" class="kf-list-item"><a data-v-c0b5d07a="" href="https://mijnpartou.nl/" target="_blank" rel="noopener noreferrer" class="kf-list-link"> Zelf regelen </a></li><li data-v-c0b5d07a="" class="kf-list-item"><a data-v-c0b5d07a="" href="https://mijnpartou.nl/weten/" target="_blank" rel="noopener noreferrer" class="kf-list-link"> Veelgestelde vragen </a></li><li data-v-c0b5d07a="" class="kf-list-item"><a data-v-c0b5d07a="" href="https://partou.nl/actueel/" class="kf-list-link"> Nieuws &amp; blogs </a></li></ul></div><div class="col-span-10 md:col-span-3 lg:col-span-2 mb-12 md:mb-0"><ul data-v-c0b5d07a="" class="kf-list"><li data-v-c0b5d07a="" class="kf-list-item"><a data-v-c0b5d07a="" href="https://www.werkenbijpartou.nl" class="kf-list-link"> Werken bij Partou </a></li><li data-v-c0b5d07a="" class="kf-list-item"><a data-v-c0b5d07a="" href="https://partougroup.com/nl/" target="_blank" rel="noopener noreferrer" class="kf-list-link"> Partou Group </a></li><li data-v-c0b5d07a="" class="kf-list-item"><a data-v-c0b5d07a="" href="https://partou.nl/onderzoek-wetenschap/" target="_blank" rel="noopener noreferrer" class="kf-list-link"> Onderzoek &amp; wetenschap </a></li><li data-v-c0b5d07a="" class="kf-list-item"><a data-v-c0b5d07a="" href="https://partougroup.com/nl/in-de-maatschappij/" target="_blank" rel="noopener noreferrer" class="kf-list-link"> Maatschappelijk jaarverslag </a></li><li data-v-c0b5d07a="" class="kf-list-item"><a data-v-c0b5d07a="" href="/herroepingsrecht/" class="kf-list-link"> Herroepingsrecht </a></li><li data-v-c0b5d07a="" class="kf-list-item"><a data-v-c0b5d07a="" href="/contact/" class="kf-list-link"> Contact </a></li></ul></div></div></div><!----><div class="svg-container"><div class="curve-container"><svg width="8070" height="768" viewBox="0 0 8070 768" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="curve curve-left is-svg-gray"><g clip-path="url(#clip0_1_13)"><path d="M0 762.394V556.831C2499.42 960.215 5688.44 767.501 8070 0V762.394V768H0V762.394Z" fill="currentColor"></path></g><defs><clipPath id="clip0_1_13"><rect width="8070" height="768" fill="red"></rect></clipPath></defs></svg><!----><!----><!----></div></div></div><div class="footer-bottom bg-gray-50 z-[1] relative"><div class="footer-inner-bottom"><div class="grid grid-cols-12 w-full"><div class="col-span-12 self-end md:self-start pb-8 md:pb-0"><div class="meta-bottom"><div class="h-full flex flex-col lg:flex-row flex-wrap justify-center items-center gap-2"><span class="meta-top-left"> © 2026 Partou </span><a href="/privacy/" class="meta-top-right is-alternative ml-4 no-underline"> Privacy, cookies &amp; meer </a><a href="/voorwaarden/" class="meta-top-right is-alternative no-underline"> Algemene voorwaarden </a></div><div class="flex flex-col lg:flex-row items-center justify-center gap-2"><div><a href="https://www.kinderopvang.nl/" target="_blank" rel="noopener noreferrer" class="block focus:outline-none focus:ring-2 focus:ring-black"><img src="/media/q4yloqd5/bk_logo_landscape_yellow.png" alt="Branchorganisatie Kinderopvang" class="meta-bottom-image"></a></div><div><a href="/b-corp/" target="_blank" rel="noopener noreferrer" class="block focus:outline-none focus:ring-2 focus:ring-black"><img src="/media/hvvpwdxt/b-corp-logo-black-rgb-1-svg70.png" alt="B-corp" class="meta-bottom-image"></a></div><div><a href="https://expertisecentrumkinderopvang.nl/" target="_blank" rel="noopener noreferrer" class="block focus:outline-none focus:ring-2 focus:ring-black"><img src="/media/aa5ly1q0/expertisecentrum-kinderopvang_vignet_toekomstmaker-2026_150px.png" alt="Expertisecentrum Kinderopvang" class="meta-bottom-image"></a></div><ul data-v-54be4c0c="" class="social-links"><li data-v-54be4c0c="" class="social-links-list-item"><a data-v-54be4c0c="" href="https://www.instagram.com/partoukinderopvang/" target="_blank" rel="noopener noreferrer" aria-label="Bezoek onze Instagram pagina" title="Bezoek onze Instagram pagina" class="social-links-link"><!----><!----><!----><!----><svg data-v-54be4c0c="" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="instagram" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-inline--fa fa-instagram fa-w-14 icon"><path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg><!----></a></li><li data-v-54be4c0c="" class="social-links-list-item"><a data-v-54be4c0c="" href="https://www.facebook.com/partoukinderopvang/" target="_blank" rel="noopener noreferrer" aria-label="Bezoek onze Facebook pagina" title="Bezoek onze Facebook pagina" class="social-links-link"><!----><svg data-v-54be4c0c="" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook-f" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="svg-inline--fa fa-facebook-f fa-w-10 icon"><path fill="currentColor" d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path></svg><!----><!----><!----><!----></a></li><li data-v-54be4c0c="" class="social-links-list-item"><a data-v-54be4c0c="" href="https://www.youtube.com/channel/UC4_eaY3ZyZa6aal-TIwirlg" target="_blank" rel="noopener noreferrer" aria-label="Bezoek onze YouTube pagina" title="Bezoek onze YouTube pagina" class="social-links-link"><!----><!----><svg data-v-54be4c0c="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="icon"><path fill="currentColor" d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path></svg><!----><!----><!----></a></li><li data-v-54be4c0c="" class="social-links-list-item"><a data-v-54be4c0c="" href="https://www.linkedin.com/company/partou-bv/" target="_blank" rel="noopener noreferrer" aria-label="Bezoek onze LinkedIn pagina" title="Bezoek onze LinkedIn pagina" class="social-links-link"><svg data-v-54be4c0c="" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="linkedin-in" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-inline--fa fa-linkedin-in fa-w-14 icon"><path fill="currentColor" d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path></svg><!----><!----><!----><!----><!----></a></li><li data-v-54be4c0c="" class="social-links-list-item"><a data-v-54be4c0c="" href="https://nl.pinterest.com/partoukinderopvang/" target="_blank" rel="noopener noreferrer" aria-label="Bezoek onze Pinterest pagina" title="Bezoek onze Pinterest pagina" class="social-links-link"><!----><!----><!----><svg data-v-54be4c0c="" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="pinterest-p" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="svg-inline--fa fa-pinterest-p fa-w-12 icon"><path fill="currentColor" d="M204 6.5C101.4 6.5 0 74.9 0 185.6 0 256 39.6 296 63.6 296c9.9 0 15.6-27.6 15.6-35.4 0-9.3-23.7-29.1-23.7-67.8 0-80.4 61.2-137.4 140.4-137.4 68.1 0 118.5 38.7 118.5 109.8 0 53.1-21.3 152.7-90.3 152.7-24.9 0-46.2-18-46.2-43.8 0-37.8 26.4-74.4 26.4-113.4 0-66.2-93.9-54.2-93.9 25.8 0 16.8 2.1 35.4 9.6 50.7-13.8 59.4-42 147.9-42 209.1 0 18.9 2.7 37.5 4.5 56.4 3.4 3.8 1.7 3.4 6.9 1.5 50.4-69 48.6-82.5 71.4-172.8 12.3 23.4 44.1 36 69.3 36 106.2 0 153.9-103.5 153.9-196.8C384 71.3 298.2 6.5 204 6.5z"></path></svg><!----><!----></a></li></ul></div></div></div></div></div></div></footer></section></main>
+
+    
+
+
+
+<iframe class="CybotCookiebotHiddenIframe" name="__uspapiLocator" tabindex="-1" role="presentation" aria-hidden="true" title="Blank"></iframe><iframe class="CybotCookiebotOffscreenIframe" tabindex="-1" role="presentation" aria-hidden="true" title="Blank" src="https://consentcdn.cookiebot.com/sdk/bc-v4.min.html"></iframe></body></html>

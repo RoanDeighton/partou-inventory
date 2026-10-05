@@ -1,0 +1,53 @@
+[
+  {
+    "path": "header",
+    "tag": "header",
+    "classes": "header transition-all lg:h-28",
+    "backgroundColor": "rgb(255, 255, 255)",
+    "color": "rgb(29, 29, 29)",
+    "fontFamily": "\"Cera Pro\", Arial, sans-serif",
+    "fontSize": "18px",
+    "fontWeight": "400",
+    "paddingTop": "0px",
+    "paddingBottom": "0px",
+    "marginTop": "0px",
+    "marginBottom": "0px",
+    "top": 0,
+    "width": 1440,
+    "height": 111
+  },
+  {
+    "path": "main>0",
+    "tag": "section",
+    "classes": "html-renderer",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "color": "rgb(29, 29, 29)",
+    "fontFamily": "\"Cera Pro\", Arial, sans-serif",
+    "fontSize": "18px",
+    "fontWeight": "400",
+    "paddingTop": "0px",
+    "paddingBottom": "0px",
+    "marginTop": "0px",
+    "marginBottom": "0px",
+    "top": 0,
+    "width": 1440,
+    "height": 6034
+  },
+  {
+    "path": "footer",
+    "tag": "footer",
+    "classes": "footer overflow-hidden",
+    "backgroundColor": "rgb(255, 255, 255)",
+    "color": "rgb(29, 29, 29)",
+    "fontFamily": "\"Cera Pro\", Arial, sans-serif",
+    "fontSize": "18px",
+    "fontWeight": "400",
+    "paddingTop": "80px",
+    "paddingBottom": "0px",
+    "marginTop": "0px",
+    "marginBottom": "0px",
+    "top": 5526,
+    "width": 1440,
+    "height": 508
+  }
+]
